@@ -1,0 +1,11 @@
+Criando os executáveis:
+python -m PyInstaller --onefile --windowed --add-data "C:\Users\luhel\Desktop\FURB\SEMESTRE 6\Sitema Operacional\TreeFileSize-SO-Ajustado\img_pasta.png;img" --add-data "C:\Users\luhel\Desktop\FURB\SEMESTRE 6\Sitema Operacional\TreeFileSize-SO-Ajustado\img_arquivo.png;img" TrabalhoAjustado.py
+
+python -m PyInstaller --onefile --windowed --add-data "C:\Users\luhel\Desktop\FURB\SEMESTRE 6\Sitema Operacional\TreeFileSize-SO-Ajustado\img_pasta.png;img" --add-data "C:\Users\luhel\Desktop\FURB\SEMESTRE 6\Sitema Operacional\TreeFileSize-SO-Ajustado\img_arquivo.png;img" TrabalhoAntigo.py
+
+Considerações:
+-Limitei a quantidade de arquivos do tipo selecionado na fatia do gráfico para mostrar apenas 100 arquivos do tipo, isso porque a interface trava tentando criar muito botões de uma vez
+-A leitura dos arquivos pela primeira vez demora em torno de 15 minutos, principalmente a Users
+-As pesquisas na barra de pesquisa são lentas, pois o cache é extenso
+-O carregamento dos botões no frame da lista de arquivos demora em torno de 1 minutinho para carregar por conta da interface que está criando os botões.
+-criei o executável do trabalho antigo e do novo
